@@ -46,7 +46,7 @@ module Kaminari
 
     # total item numbers of the original array
     def total_count
-      @_total_count || @_original_array.count
+      @_total_count || @_original_array.count(:all)
     end
 
     # returns another chunk of the original array
